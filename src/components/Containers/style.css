@@ -1,0 +1,188 @@
+header {
+  width: 100%;
+  padding: 1em;
+  background: #a5a8a2;
+  background: -webkit-linear-gradient(left, #a5a8a2, #cedfb8);
+  background: -moz-linear-gradient(left, #a5a8a2, #cedfb8);
+  background: linear-gradient(to right, #a5a8a2, #cedfb8);
+  display: flex;
+
+  align-items: center;
+}
+h1 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 40px;
+}
+h2 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 5px;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 1% 0;
+  text-align: center;
+  line-height: 35px;
+  background: #3e9c28;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 232, 16, 0.591474) 3%,
+    #29d709 46%,
+    rgba(113, 193, 63, 0.953) 65%,
+    #a7df94 76%,
+    rgba(4, 195, 42, 0.459821) 96%
+  );
+}
+
+nav {
+  margin-left: 100px;
+  margin-top: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: larger;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.container__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container__flex > div {
+  flex: 1 0 25%;
+  margin: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+.card__image {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card__title {
+  margin: 10px 0 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card__author {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+}
+
+.card__resena {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #131111;
+  text-align: center;
+}
+
+.card__price {
+  margin: 5px 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card__button {
+  background: #3e9c28;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 232, 16, 0.591474) 3%,
+    #29d709 46%,
+    rgba(113, 193, 63, 0.953) 65%,
+    #45cf16 76%,
+    rgba(4, 195, 42, 0.459821) 96%
+  );
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.card__button:hover {
+  background-color: #2c7a32;
+}
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-total {
+  margin-top: 2rem;
+}
+
+.cart-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
